@@ -1,10 +1,19 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   background: #fff;
   color: #0f283f;
   font-family: "Open Sans", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Mystery+Quest");
+
+@font-face {
+
+  font-family: "Mystery Quest";
+  src: url("../fonts/CenturyGothic.ttf");
 }
 
 a {
@@ -79,10 +88,88 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   display: table;
   width: 100%;
-  height: 100vh;
-  background: url(../img/mcmultinational.jpg) top center fixed;
+  height: auto;
+ /* background: url(../img/mcmultinational.jpg) top center fixed;*/
   background-size: cover;
 }
+
+.box-header{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+
+.box-header .boxlogo{
+  position: absolute;
+  z-index: 3;
+  width: 30%;
+  height: 130px;
+  background-color: #428bca;
+  clip-path: polygon(0% 0%, 100% 0%, 65% 100%, 0% 100%);
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+
+  transition: width 2s linear 1s;
+ 
+ 
+}
+
+.boxlogo .box-img{
+  width:300px;
+
+}
+
+.boxlogo img{
+  width: 100%;
+  height: auto;
+  padding: 0 0 0 15px;
+  object-fit: cover;
+}
+
+
+
+.box-header .box-main{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 138px;
+  background-color: #fff;
+  padding:  0 0 0 20%;
+
+}
+
+.box-main .infomd{
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+
+}
+
+.box-main .menumd{
+  width: 100%;
+  height: 100px;
+  background-color: #0f283f;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+}
+
+@media only screen and (max-width: 1030px) {
+
+.boxlogo .box-img{
+  width:70%;
+
+}
+}
+
+
+
+
+ 
+
 
 #hero .hero-logo {
   margin: 20px;
@@ -94,8 +181,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .hero-container {
 
-  background: rgba(243, 243, 243, 0.7);
-  display: table-cell;
+  /*background: rgba(243, 243, 243, 0.7);*/
+  /*display: table-cell;*/
   margin: 0;
   padding: 0;
   text-align: center;
@@ -172,11 +259,43 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+
+/*--------------------------------------------------------------
+# section slider
+--------------------------------------------------------------*/
+#slide-section{
+
+  width: 100%;
+  height: auto;
+
+}
+
+.title-slide{
+
+  font-size: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px #666;
+
+}
+
+.subtitle-slide{
+
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  text-shadow: 2px 2px 2px #666;
+
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #b2bed0;
+  background: #428bca;
   padding: 20px 0;
   height: 90px;
 }
@@ -219,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .is-sticky #header {
-  background: rgba(222, 226, 228, 0.7);
+  background: rgba(66, 139, 202, 1);
 }
 
 /*--------------------------------------------------------------
@@ -252,6 +371,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu li:hover > ul,
 .nav-menu li.sfHover > ul {
   display: block;
+  z-index: 20;
 }
 
 .nav-menu ul ul {
@@ -287,10 +407,52 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px 0;
 }
 
-@media (max-width: 768px) {
-  #nav-menu-container {
-    display: none;
-  }
+
+@media (max-width: 425px) {
+
+.box-header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+}
+
+.box-header .boxlogo {
+  position: absolute;
+  z-index: 3;
+  width: 30%;
+  height: 161px;
+  background-color: #428bca;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.box-header .box-main {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    padding: 0px 0 0 0%;
+}
+
+.box-main .infomd {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+}
+
+
+.box-main .menumd {
+    width: 100%;
+    height: 90px;
+    background-color: #0f283f;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
 }
 
 /* Nav Meu Styling */
@@ -299,14 +461,18 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  font-family: "Mystery Quest", cursive;
+  font-size: 100%;
+  font: oblique bold 120%;
+  font-weight: 600;
   outline: none;
+  text-rendering: optimizeSpeed;
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
   color: #03C4EB;
+  border-bottom: #f4f4f4 solid 1px;
+  
 }
 
 .nav-menu ul {
@@ -316,7 +482,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul li {
   background: #fff;
-  border-top: 1px solid #f4f4f4;
+  border-top: .5px solid #f4f4f4;
+  position: relative;
+  z-index: 99;
+ 
 }
 
 .nav-menu ul li:first-child {
@@ -324,7 +493,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul li:hover {
-  background: #f6f6f6;
+  background-color: #f6f6f6;
+ 
 }
 
 .nav-menu ul li a {
@@ -339,9 +509,9 @@ h1, h2, h3, h4, h5, h6 {
 #mobile-nav-toggle {
   position: fixed;
   right: 0;
-  top: 0;
+  top: 10%;
   z-index: 999;
-  margin: 20px 20px 0 0;
+  margin: 55px 20px 0 0;
   border: 0;
   background: none;
   font-size: 24px;
@@ -354,7 +524,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
+  
+  #nav-menu-container {
+    display: none;
+  }
   #mobile-nav-toggle {
     display: inline;
   }
@@ -367,7 +541,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(15, 40, 63, 0.8);
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -394,10 +568,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   display: block;
   outline: none;
+  
 }
 
 #mobile-nav ul li a:hover {
   color: #fff;
+
 }
 
 #mobile-nav ul li li {
@@ -452,10 +628,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 .section-title {
   font-size: 32px;
-  color: #0f283f;
+  color: #428bca;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
+  margin: 3px 0;
+ 
+}
+
 }
 
 .section-description {
@@ -466,24 +646,87 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-title-divider {
   width: 100px;
   height: 3px;
-  background: #04346c;
+  background: #428bca;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 /* Get Started Section
 --------------------------------*/
 #about {
-  background: #fff;
-  padding: 80px 0;
+  width: 100%;
+  /*background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/fnd-about.jpg") fixed center center no-repeat;*/
+  background: url("../img/fnd-about2.jpg") ;
+  background-size: 100%;
+  background-color: #ffffff;  
+  background-position: center top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed;
+  padding: 110px 0;
+}
+
+.s-left{
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  padding: 10px 0;
+  background-color: #04346c;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  box-shadow: inset -5px 5px #428bca;
+}
+
+.s-left .skew-block {
+  background-color: #ffffff;
+  position: relative;
+  /* background: inherit; */
+  top: -16px;
+  right: -5%;
+  width: 46.8%;
+  height: 30px;
+  -webkit-transform: skew(-34deg);
+  transform: skew(-34deg);
+}
+
+.s-rigth{
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+ 
+
+}
+
+.tt .about-title {
+  font-size: 32px;
+  color: #0f283f;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+
+  
 }
 
 #about .about-container {
-  background: url(../img/about-img.jpg) left top no-repeat;
-  background-size: cover;
+  width: 100%;
+  /*background: url(../img/mercado-internacional.jpg) no-repeat;*/
+  background-size: contain;
+  /*background-attachment: fixed;*/
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-about {
+  
+  width: 100%;
+  /*background: url(../img/about-img.jpg) no-repeat;*/
+  background-size: contain;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  border: #666 solid 2px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 #about .about-content {
