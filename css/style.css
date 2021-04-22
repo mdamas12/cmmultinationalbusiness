@@ -1542,6 +1542,7 @@ Subscribe Section
 }
 
 #contact .info p {
+  color: rgb(0 23 93);
   padding: 0 0 10px 50px;
   line-height: 24px;
 }
