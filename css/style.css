@@ -1615,9 +1615,9 @@ Subscribe Section
   height: auto;
   width: 100%;
   margin: 90px auto;
+  border-radius: 20px;
   padding: 10px 10px 0 10px;
-  background: url("../img/mercado-internacional.jpg") fixed center center no-repeat; 
- 
+  background: -webkit-linear-gradient(top,rgb(189, 189, 189),rgb(4 52 108 / 80%),#04346c);
   -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
@@ -1659,7 +1659,7 @@ Subscribe Section
 
   font-weight: 500;
   font-size: 1.5rem;
-  color: #3C4447;
+  color: #fff;
 
 }
 
@@ -1671,7 +1671,7 @@ h2 {
 }
 .separator {
   margin-top: 10px;
-  border: 1px solid #C3C3C3;
+  border: 1px solid #031f40;
 }
 
 p {
@@ -1679,14 +1679,14 @@ p {
   padding: 10px;
   font-size: 1rem;
   line-height: 150%;
-  color: #4B4B4B;
+  color: #dadada;
 }
 
 /* DATE of release*/
 h5.tittle-values {
   text-align: center;
   font-size: 1.5rem;
-  color: #3C4447;
+  color: #fff;
   font-weight: 800;
   margin: 0 auto;
 }
@@ -1705,7 +1705,7 @@ li {
   
   list-style: none;
   padding-right: 0px;
-  color: #7B7B7B;
+  color: #dadada;
   font-size: 1rem;
 }
 
