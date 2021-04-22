@@ -799,7 +799,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #products #indust {
   margin-bottom: 20px;
-  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)),url("../img/industrial.jpg");
+  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)),url("../img/oil.jpg");
   background-size: cover;
   border-radius: 10px;
  
@@ -833,7 +833,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #software {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
-  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/software.jpg");
+  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/construction.jpg");
   background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
