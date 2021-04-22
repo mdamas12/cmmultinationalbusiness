@@ -777,7 +777,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #products {
-  background: url("../img/fnd-products2.jpg") fixed center center;
+  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)),url("../img/fnd-products2.jpg") fixed center center;
   /*background-color: #04346c;*/
   background-size: cover;
   padding: 80px 0 60px 0;
@@ -814,7 +814,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
- 
   padding: 5px;
   
 }  
@@ -834,6 +833,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #software {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
+  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/software.jpg");
+  background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
   
@@ -844,6 +845,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #domestic {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
+  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/domestic.jpg");
+  background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
 
@@ -854,12 +857,48 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #healt {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
+  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/healt.jpg");
+  background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
 
   padding: 5px;
   
 }
+
+
+#products #Autoindustry {
+  margin-bottom: 20px;
+  /*background-color: #03C4EB;*/
+  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)), url("../img/autoindustry.jpg");
+  background-size: cover;
+  border: rgb(151, 151, 151) solid 1px;
+  border-radius: 10px;
+  padding: 5px;
+  
+} 
+
+#products #Mining {
+  margin-bottom: 20px;
+  /*background-color: #03C4EB;*/
+  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)), url("../img/miningindustry.jpg");
+  background-size: cover;
+  border: rgb(151, 151, 151) solid 1px;
+  border-radius: 10px;
+  padding: 5px;
+  
+} 
+
+#products #IndustrialMachinery {
+  margin-bottom: 20px;
+  /*background-color: #03C4EB;*/
+  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)), url("../img/machinary.jpg");
+  background-size: cover;
+  border: rgb(151, 151, 151) solid 1px;
+  border-radius: 10px;
+  padding: 5px;
+  
+} 
 
 
 
@@ -927,37 +966,34 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #products #indust:hover  {
-  background: none;
+
 
 
 } 
 
 #products #commodites:hover  {
-  background: none;
+
 
 } 
 
 
 #products #technologies:hover  {
-  background: none;
+
 
 } 
 
 #products #software:hover  {
-  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/software.jpg");
-  background-size: cover;
+
 
 } 
 
 #products #domestic:hover  {
-  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/domestic.jpg");
-  background-size: cover;
+
 
 } 
 
 #products #healt:hover  {
-  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/healt.jpg");
-  background-size: cover;
+ 
 
 } 
 
