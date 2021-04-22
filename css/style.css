@@ -777,7 +777,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #products {
-  background: url("../img/fnd-products.jpg") fixed center center;
+  background: url("../img/fnd-products2.jpg") fixed center center;
   /*background-color: #04346c;*/
   background-size: cover;
   padding: 80px 0 60px 0;
@@ -788,7 +788,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #products .service-item {
   margin-bottom: 20px;
-  background-color: rgba(0,16,102,.6 );
+  /*background-color: rgba(0,16,102,.6 );*/
+  
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
   height: 230px;
@@ -798,8 +799,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #products #indust {
   margin-bottom: 20px;
-  /*background-color: #03C4EB;*/
-  border: rgb(151, 151, 151) solid 1px;
+  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)),url("../img/industrial.jpg");
+  background-size: cover;
   border-radius: 10px;
  
   padding: 5px;
@@ -809,6 +810,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #commodites {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
+  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)), url("../img/commodites.jpg");
+  background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
  
@@ -819,6 +822,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #technologies {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
+  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)),  url("../img/technologies.jpg");
+  background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
 
@@ -916,26 +921,25 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #products .service-item:hover  {
-  background: none;
+  
+  background-color: rgba(0,16,102,.6 );
 
 }
 
 #products #indust:hover  {
-  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/industrial.jpg");
-  background-size: cover;
+  background: none;
+
 
 } 
 
 #products #commodites:hover  {
-  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/commodites.jpg");
-  background-size: cover;
+  background: none;
 
 } 
 
 
 #products #technologies:hover  {
-  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/technologies.jpg");
-  background-size: cover;
+  background: none;
 
 } 
 
