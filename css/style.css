@@ -530,7 +530,7 @@ h1, h2, h3, h4, h5, h6 {
 #mobile-nav-toggle {
   position: fixed;
   right: 0;
-  top: 10%;
+  top: 7%;
   z-index: 999;
   margin: 55px 20px 0 0;
   border: 0;
@@ -545,7 +545,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   
   #nav-menu-container {
     display: none;
@@ -1136,6 +1136,20 @@ body.mobile-nav-active #mobile-nav-toggle {
     -ms-transform: translate(0%, 0%);
       }
 
+@media (max-width: 768px) {
+    #sec-services #card-izq { 
+
+    -webkit-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    }
+
+    #sec-services #card-der{ 
+
+      -webkit-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+        }
+    
+   }
 
 
 /* -------------------------------- 
