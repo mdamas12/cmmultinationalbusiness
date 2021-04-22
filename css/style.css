@@ -799,7 +799,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #products #indust {
   margin-bottom: 20px;
-  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)),url("../img/oil.jpg");
+  background: url("../img/oil.jpg");
   background-size: cover;
   border-radius: 10px;
  
@@ -810,7 +810,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #commodites {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
-  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)), url("../img/commodites.jpg");
+  background:  url("../img/commodites.jpg");
   background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
@@ -821,7 +821,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #technologies {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
-  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)),  url("../img/technologies.jpg");
+  background:  url("../img/technologies.jpg");
   background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
@@ -833,7 +833,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #software {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
-  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/construction.jpg");
+  background: url("../img/construction.jpg");
   background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
@@ -845,7 +845,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #domestic {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
-  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/domestic.jpg");
+  background:  url("../img/domestic.jpg");
   background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
@@ -857,7 +857,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #healt {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
-  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)), url("../img/healt.jpg");
+  background:  url("../img/healt.jpg");
   background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
@@ -870,7 +870,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #Autoindustry {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
-  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)), url("../img/autoindustry.jpg");
+  background:  url("../img/autoindustry.jpg");
   background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
@@ -881,7 +881,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #Mining {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
-  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)), url("../img/miningindustry.jpg");
+  background:  url("../img/miningindustry.jpg");
   background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
@@ -892,7 +892,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #products #IndustrialMachinery {
   margin-bottom: 20px;
   /*background-color: #03C4EB;*/
-  background: linear-gradient(rgb(0 0 0 / 51%), rgb(255 251 251 / 10%)), url("../img/machinary.jpg");
+  background:  url("../img/machinary.jpg");
   background-size: cover;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
@@ -1021,11 +1021,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #products .service-title {
   /* margin-left: 80px;*/
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px #000;
   /*margin-bottom: 15px;*/
   margin: 20px 0 0 0;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   
 }
 
