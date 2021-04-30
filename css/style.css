@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
  /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
  para probar la diferencia con y sin scroll suavizado*/
 }
@@ -291,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.title-slide{
+#slide-section .title-slide{
 
   font-size: 32px;
   color: #fff;
@@ -299,6 +299,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-weight: 700;
   text-shadow: 2px 2px 2px #666;
+  /*animation-delay: 1s;
+  animation-name: bounceInDown;*/
 
 }
 
@@ -312,13 +314,16 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 2px 2px 2px #666;
 
 }
+
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #428bca;
-  padding: 20px 0;
+  background: #0f283f;
+  padding: 20px;
   height: 90px;
+  width: 100%;
 }
 
 #header #logo {
@@ -359,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .is-sticky #header {
-  background: rgba(66, 139, 202, 1);
+  background:#0f283f;
 }
 
 /*--------------------------------------------------------------
@@ -676,124 +681,136 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #about {
   width: 100%;
-  /*background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/fnd-about.jpg") fixed center center no-repeat;
-  background: url("../img/fnd-about2.jpg") ;
-  background-size: 100%;
-  background-color: #ffffff;  
-  background-position: center top; 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 110px 0;*/
-  padding: 60px 0 0 0;
-  background-color: #04346c;
+  background:  url("../img/slide8.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  padding: 110px 20px;
   font-family: "Roboto", sans-serif;
-  background: -webkit-linear-gradient(top,#04346c,#205999,#fff);
+  
   
 
 }
 
-.s-left{
-  width: 100%;
-  height: auto;
-  margin: 10px auto;
-  padding: 10px 0;
-  background-color: #04346c;
-  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
-  box-shadow: inset -5px 5px #428bca;
-}
-
-.s-left .skew-block {
-  background-color: #ffffff;
-  position: relative;
-  /* background: inherit; */
-  top: -16px;
-  right: -5%;
-  width: 46.8%;
-  height: 30px;
-  -webkit-transform: skew(-34deg);
-  transform: skew(-34deg);
-}
-
-.s-rigth{
-  width: 100%;
-  height: auto;
-  padding: 10px 0;
-  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
- 
-
-}
-
-.tt .about-title {
-  font-size: 32px;
-  color: #0f283f;
-  text-transform: uppercase;
-  text-align: center;
+#about .tittle {
+  /*position: absolute;*/
+  top: 0;
+  font-size: 6vw;
   font-weight: 700;
-
-  
-}
-
-#about .about-container {
-  width: 100%;
-  /*background: url(../img/mercado-internacional.jpg) no-repeat;*/
-  background-size: contain;
-  /*background-attachment: fixed;*/
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.img-about {
-  
-  width: 100%;
-  /*background: url(../img/about-img.jpg) no-repeat;*/
-  background-size: contain;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: #666 solid 2px;
-  border-radius: 2px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-
-}
-
-#about .about-content {
-  background: #fff;
+ padding: 0 55px;
+  text-transform: uppercase;
+  color: #0f283f;
+  text-shadow: 1px 1px rgba(255, 255, 255, .5);
 }
 
 #about .about-title {
-  color: #333;
+  font-size: 1.3rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
-  font-size: 28px;
 }
 
-#about .about-text {
-  line-height: 26px;
+#about .about-parraf{
+  font-size: 1rem;
+  color: #fbfbfb;
+  text-align: justify;
+  /*font-weight: 700;*/
 }
 
-#about .about-text:last-child {
-  margin-bottom: 0;
+#about .philosophy {
+  font-size: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.486);
+  color: #145998;
+  text-transform: uppercase;
+  
+
+}
+#about .transparent{
+  background-color: rgba(255, 255, 255, 0.486);
+  font-size: 1.3rem;
+  color: #0f283f;
+  font-weight: 500;
 }
 
-/* Services Section
+#about .about-philosophy {
+  font-size: 1.3rem;
+  color: #145998;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+#about .philosophy-desc{
+  font-size: 1rem;
+  color: #0f283f;
+  text-align: justify;
+  /*font-weight: 700;*/
+  background-color: rgb(255 255 255 / 62%);
+
+}
+
+#about .values-list{
+
+  font-size: 1rem;
+  color: #0f283f;
+  text-align: justify;
+  /*font-weight: 700;*/
+  background-color: rgb(255 255 255 / 62%);
+
+}
+
+#about .values-list li{
+  color: #0f283f;
+}
+
+
+
+
+
+
+/*******************************
+     Products Section
 --------------------------------*/
 #products {
-  background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)),url("../img/fnd-products2.jpg") fixed center center;
+ /* background: linear-gradient(rgba(13, 16, 201, 0.418), rgba(23, 13, 150, 0.404)),url("../img/fnd-products2.jpg") fixed center center;*/
+  background: -webkit-linear-gradient(top,#fff,#04346c61,#04346c);
   /*background-color: #04346c;*/
   background-size: cover;
-  padding: 80px 0 60px 0;
+  padding: 80px 50px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#products .service-item {
+#products .tittle {
+  /*position: absolute;*/
+  top: 0;
+  font-size: 5vw;
+  font-weight: 600;
+ padding: 0 55px;
+  text-transform: uppercase;
+  color: #0f283f;
+  text-shadow: 1px 1px rgba(255, 255, 255, .5);
+}
+
+#products .supply-item {
   margin-bottom: 20px;
   /*background-color: rgba(0,16,102,.6 );*/
-  
-  border: rgb(151, 151, 151) solid 1px;
-  border-radius: 10px;
   height: 230px;
-  padding: 5px;
+  padding: 0 7px;
+  
+}
+
+#products .supply-tittle {
+  background-color: rgba(0,16,102,.6 );
+  color:#fff;
+  height: 50px;
+  padding: 5px 5px;
+  border-radius: 10px 10px 0 0 ;
+  text-align: center;
+  box-shadow: 0 0 20px #4f9;
   
 }
 
@@ -801,9 +818,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
   background: url("../img/oil.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   border-radius: 10px;
- 
-  padding: 5px;
+  padding: 0 5px;
   
 }
 
@@ -812,9 +830,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   /*background-color: #03C4EB;*/
   background:  url("../img/commodites.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
-  padding: 5px;
+  padding:  0 5px;
   
 }  
 
@@ -823,10 +843,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   /*background-color: #03C4EB;*/
   background:  url("../img/technologies.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
 
-  padding: 5px;
+  padding: 0 5px;
   
 }
 
@@ -835,10 +857,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   /*background-color: #03C4EB;*/
   background: url("../img/construction.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
   
-  padding: 5px;
+  padding: 0 5px;
   
 }
 
@@ -847,10 +871,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   /*background-color: #03C4EB;*/
   background:  url("../img/domestic.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
 
-  padding: 5px;
+  padding: 0 5px;
   
 }
 
@@ -859,10 +885,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   /*background-color: #03C4EB;*/
   background:  url("../img/healt.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
 
-  padding: 5px;
+  padding: 0 5px;
   
 }
 
@@ -872,9 +900,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   /*background-color: #03C4EB;*/
   background:  url("../img/autoindustry.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
-  padding: 5px;
+  padding: 0 5px;
   
 } 
 
@@ -883,9 +913,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   /*background-color: #03C4EB;*/
   background:  url("../img/miningindustry.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
-  padding: 5px;
+  padding: 0 5px;
   
 } 
 
@@ -894,9 +926,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   /*background-color: #03C4EB;*/
   background:  url("../img/machinary.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   border: rgb(151, 151, 151) solid 1px;
   border-radius: 10px;
-  padding: 5px;
+  padding: 0 5px;
   
 } 
 
@@ -1046,26 +1080,79 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #sec-services {
-  background: url("../img/fnd-services.jpg") fixed center center;
+  background: url("../img/slide-service2.jpg") fixed center center;
   /*background-color: #e8eaec;*/
   background-size: cover;
-  padding: 80px 0 60px 0;
+  padding: 20px 0 60px 0;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  height: auto;
+  
 }
 
-#sec-services .tittle-service span {
-  /*position: absolute;*/
+#sec-services .tittle-service  {
   top: 0;
-  font-size: 8vw;
-  font-weight: 700;
+  font-size: 5vw;
+  font-weight: 600;
+ padding: 0 55px;
   text-transform: uppercase;
-  color: #fff;
+  color: #0f283f;
   text-shadow: 1px 1px rgba(255, 255, 255, .5);
   
 }
+
+#sec-services .num-industry {
+
+  /*left: 0%;*/
+  z-index: 10;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0 10 82 / 82%);
+  box-shadow: -2px -2px #428bca;
+  animation-delay: .8s;
+  animation-name: lightSpeedIn;
+  
+}
+
+#sec-services .tittle-industry {
+ 
+  /*left: 0%;*/
+  z-index: 10;
+  padding: 5px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0 10 82);
+  box-shadow: -2px -2px #428bca;
+  animation-delay: 1.2s;
+  animation-name: bounceInRight;
+}
+
+.close-margin{
+  margin: 0;
+  padding: 0;
+}
+
+#sec-services .industry-Info {
+
+  z-index: 10;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background:  linear-gradient( rgba(0, 0, 0, 0.6), rgba(2, 46, 84, 0.8));
+  animation-delay: 1.5s;
+  animation-name: bounceInDown;
+
+
+}
+
+
 
 #sec-services .Subtittle-service{
 
@@ -1074,6 +1161,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #010c49;
   text-align:center;
   margin: 10px 0;
+  text-decoration: none;
+  transition: all .5s;
+
+}
+#sec-services .Subtittle-service:hover{
+  color: #0722b6;
 
 }
 
@@ -1094,16 +1187,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* The card */
 #sec-services #card-izq {
   position: relative;
-  background-color: rgb(255 255 255 / 100%);
-  height: 300px;
+  background-color: rgb(255 255 255 / 70%);
+  height: 450px;
   width: 100%;
   margin: 90px auto;
   padding: 15px;
   z-index: 5;
-  -webkit-transform: translate(20%, -5%);
+  -webkit-transform: translate(10%, -5%);
   -ms-transform: translate(20%, -5%);
   overflow: hidden;
-  transition: all 1s;
+  transition: all .5s;
   
   -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
@@ -1130,8 +1223,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #sec-services #card-center {
   position: relative;
-  background-color: rgb(255 255 255 / 100%);
-  height: 300px;
+  background-color: rgb(255 255 255 / 70%);
+  height: 360px;
   width: 100%;
   margin: 90px auto;
   padding: 15px;
@@ -1139,7 +1232,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transform: translate(0%, 0%);
   -ms-transform: translate(0%, 0%);
   overflow: hidden;
-  transition: all 1s;
+  transition: all .5s;
 
   -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
@@ -1149,16 +1242,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #sec-services #card-der {
   position: relative;
-  background-color: rgb(255 255 255 / 100%);
-  height: 300px;
+  background-color: rgb(255 255 255 / 70%);
+  height: 450px;
   width: 100%;
   margin: 90px auto;
   padding: 15px;
   z-index: 5;
-  -webkit-transform: translate(-20%, -5%);
+  -webkit-transform: translate(-10%, -5%);
   -ms-transform: translate(20%, -5%);
   overflow: hidden;
-  transition: all 1s;
+  transition: all .5s;
+  text-align: center;
 
   -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
@@ -1168,18 +1262,27 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #sec-services #card-izq:hover { 
 
--webkit-transform: translate(8%, 0%);
+-webkit-transform: translate(5%, 0%);
 -ms-transform: translate(0%, 0%);
 }
 
 
 #sec-services #card-der:hover{ 
 
-    -webkit-transform: translate(-8%, 0%);
+    -webkit-transform: translate(-5%, 0%);
     -ms-transform: translate(0%, 0%);
       }
 
 @media (max-width: 768px) {
+  .tittle-industry{
+    font-size: 0.45rem;
+  }
+  .industry-Info {
+    font-size: 0.35rem;
+  }
+
+
+
     #sec-services #card-izq { 
 
     -webkit-transform: translate(0%, 0%);
@@ -1273,7 +1376,7 @@ Subscribe Section
 
 #subscribe .subscribe-title {
   color: #fff;
-  font-size: 28px;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -1283,19 +1386,14 @@ Subscribe Section
 
 #subscribe .apps-icon {
   color: #fff;
-  background-color: rgb(2 52 88 / 75%);
-  border-radius: 0 0 0 0;
   transition: all 1s;
+  height: 100%;
+  width: 100%;
 }
 
 
 #subscribe .apps-icon:hover {
-  color: rgb(2 52 88 / 75%);
-  background-color: rgb(255 255 255 / 90%);
-
-  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  color: rgb(2 52 88 / 100%);
 
 }
 
@@ -1758,20 +1856,4 @@ li {
   margin-right: 5px;
 }
 
-/* Floating action button */
-.fab {
-  position: absolute;
-  right: 50px;
-  bottom: -40px;
-  box-sizing: border-box;
-  padding-top: 18px;
-  background-color: #04346c;
-  width: 80px;
-  height: 80px;
-  color: white;
-  text-align: center;
-  border-radius: 50%;
-  -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
-}
+
