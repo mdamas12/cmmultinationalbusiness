@@ -693,6 +693,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
 
+.team{
+
+   background-color:   rgba(255, 255, 255, 0.80);
+   width: 100%;
+   margin: 0 0 10px 0;
+
+}
+
+.team-name{
+  color: #0f283f;
+}
+.team-par{
+ color: #0f283f;
+ font-size: 1rem;
+ text-align: left;
+}
+
 #about .tittle {
   /*position: absolute;*/
   top: 0;
