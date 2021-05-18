@@ -1614,6 +1614,17 @@ Subscribe Section
   
 }
 
+.form-imput{
+  margin: 5px;
+}
+
+.loading{
+
+  -webkit-transform: translate(129%, -43%);
+  -ms-transform: translate(129%, -43%);
+
+}
+
 #contact .form-contact{
   margin: 30px 0;
 }
