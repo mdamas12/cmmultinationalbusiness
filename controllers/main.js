@@ -24,8 +24,8 @@ app.controller("mainController", function($scope,$http){
         $scope.loading = true;
            $http({
              method: 'POST',
-             url: 'http://localhost:3000/emails/', 
-            // url: 'http://mdprofessionalservice.com:3000/emails/',
+             //url: 'http://localhost:3000/emails/', 
+             url: 'https://cmmultinationalbusiness.com:3000/emails/',
              data:{
                    name:$scope.name,
                    email:$scope.email,
